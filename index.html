@@ -193,6 +193,81 @@
           </video>
         </article>
       </section>
+      <section id="forma">
+        <h2>Форма</h2>
+        <p>
+          Заповніть <strong>форму</strong>, щоб написати нам. Коли нажмете
+          кнопку, дані підуть в адресний рядок.
+        </p>
+        <form action="" method="get">
+                <p>
+                    <label for="name">Ім'я:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+                </p>
+
+                <p>
+                    <label for="email">Електронна пошта:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </p>
+
+                <p>
+                    <label for="password">Пароль:</label><br>
+                    <input type="password" id="password" name="password" placeholder="Введіть пароль" required>
+                </p>
+
+                <p>
+                    <label for="birthdate">Дата народження:</label><br>
+                    <input type="date" id="birthdate" name="birthdate">
+                </p>
+
+                <p>
+                    <label for="course">Курс (число):</label><br>
+                    <input type="number" id="course" name="course" min="1" max="6" value="1">
+                </p>
+
+                <p>Які технології вас цікавлять? (вибір кількох опцій — checkbox):<br>
+                    <input type="checkbox" id="tech_html" name="tech" value="html" checked>
+                    <label for="tech_html">HTML</label><br>
+                    <input type="checkbox" id="tech_css" name="tech" value="css">
+                    <label for="tech_css">CSS</label><br>
+                    <input type="checkbox" id="tech_js" name="tech" value="js">
+                    <label for="tech_js">JavaScript</label>
+                </p>
+
+                <p>Ваша роль? (вибір одного з варіантів — radio):<br>
+                    <input type="radio" id="role_student" name="role" value="student" checked>
+                    <label for="role_student">Студент</label><br>
+                    <input type="radio" id="role_teacher" name="role" value="teacher">
+                    <label for="role_teacher">Викладач</label><br>
+                    <input type="radio" id="role_guest" name="role" value="guest">
+                    <label for="role_guest">Гість</label>
+                </p>
+
+                <p>
+                    <label for="subjects">Оберіть улюблені дисципліни (можна кілька — тримайте Ctrl):</label><br>
+                    <select id="subjects" name="subjects" multiple size="4">
+                        <option value="web" selected>Веб-технології</option>
+                        <option value="vm">Вища математика</option>
+                        <option value="kpt">КПТ </option>
+                        <option value="oa">Основи автоматизації</option>
+                        <option value="english">Англійська мова</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Ваше повідомлення:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" placeholder="Напишіть коментар або питання..."></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Надіслати</button>
+                    <button type="reset">Очистити</button>
+                </p>
+            </form>
+        <br />
+        <a href="#pro_nas">↑ Повернутися нагору</a>
+      </section>
+      
     </main>
   </body>
 </html>
